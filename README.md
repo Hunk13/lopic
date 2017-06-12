@@ -1,5 +1,7 @@
 # Lopic
 
+[![Build Status](https://travis-ci.org/Hunk13/lopic.svg?branch=master)](https://travis-ci.org/Hunk13/lopic)
+
 List Of PICtures on website
 
 ## Installation
@@ -13,10 +15,6 @@ gem 'lopic', github: 'hunk13/lopic'
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install lopic
 
 ## Usage
 
