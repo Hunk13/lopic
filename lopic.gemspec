@@ -5,7 +5,7 @@ require 'lopic/version'
 Gem::Specification.new do |spec|
   spec.name          = 'lopic'
   spec.version       = Lopic::VERSION
-  spec.authors       = ['Aliaksandr Kalinka']
+  spec.authors       = ['Alexandr Kalinka']
   spec.email         = ['alex.kalinoff@gmail.com']
 
   spec.summary       = 'Lopic - Simple gem for get List Of PICtures on page'
