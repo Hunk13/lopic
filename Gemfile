@@ -1,5 +1,5 @@
-source 'https://rubygems.org'
-ruby '2.3.1'
+source 'http://rubygems.org'
+ruby '2.6.0'
 
 group :test do
   gem 'pry'
