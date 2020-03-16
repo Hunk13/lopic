@@ -1,6 +1,5 @@
 /.bundle/
 /.yardoc
-/Gemfile.lock
 /_yardoc/
 /coverage/
 /doc/
@@ -13,7 +12,6 @@
 .config
 .yardoc
 usage.rb
-Gemfile.lock
 InstalledFiles
 _yardoc
 coverage

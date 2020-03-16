@@ -8,6 +8,7 @@ group :test do
 end
 
 gem 'nokogiri'
+gem 'irb', require: false
 
 # Specify your gem's dependencies in lopic.gemspec
 gemspec
