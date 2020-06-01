@@ -31,5 +31,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 12.3'
 
   spec.add_dependency 'nokogiri', '~> 1.10', '>= 1.10.0'
-  spec.add_dependency 'activesupport', '~> 5.1', '>= 5.1'
+  spec.add_dependency 'activesupport', '>= 5.1', '< 7.0'
 end
