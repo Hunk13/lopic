@@ -1,7 +1,6 @@
 require './lib/lopic'
 
 RSpec.describe 'Lopic' do
-
   describe 'create_images_array' do
     describe 'we have images' do
       it 'must create array' do
@@ -25,14 +24,22 @@ RSpec.describe 'Lopic' do
         ')
 
         expect(Lopic.send(:create_images_array, document)).to eq([
-          { src: 'http://www.msf-me.org/en/media/get/20100902_img-test.jpg', alt: 'test alt text' },
-          { src: 'http://www.msf-me.org/en/media/get/20100902_img-test.jpg' },
-          { src: 'http://www.msf-me.org/en/media/get/20100902_img-test.jpg', alt: '' },
-          { src: 'http://www.msf-me.org/en/media/get/20100902_img-test.jpg' },
-          { src: 'http://www.msf-me.org/en/media/get/20100902_img-test.jpg', alt: 'second test alt text' },
-          { src: 'http://www.msf-me.org/en/media/get/20100902_img-test.jpg' },
-          { src: 'http://www.msf-me.org/en/media/get/20100902_img-test.jpg', alt: 'div test alt text' }
-        ])
+                                                                   {
+                                                                     src: 'http://www.msf-me.org/en/media/get/20100902_img-test.jpg', alt: 'test alt text'
+                                                                   },
+                                                                   { src: 'http://www.msf-me.org/en/media/get/20100902_img-test.jpg', alt: '' },
+                                                                   {
+                                                                     src: 'http://www.msf-me.org/en/media/get/20100902_img-test.jpg', alt: ''
+                                                                   },
+                                                                   { src: 'http://www.msf-me.org/en/media/get/20100902_img-test.jpg', alt: '' },
+                                                                   {
+                                                                     src: 'http://www.msf-me.org/en/media/get/20100902_img-test.jpg', alt: 'second test alt text'
+                                                                   },
+                                                                   { src: 'http://www.msf-me.org/en/media/get/20100902_img-test.jpg', alt: '' },
+                                                                   {
+                                                                     src: 'http://www.msf-me.org/en/media/get/20100902_img-test.jpg', alt: 'div test alt text'
+                                                                   }
+                                                                 ])
       end
     end
 
@@ -73,23 +80,24 @@ RSpec.describe 'Lopic' do
   describe 'private hash equal' do
     it 'not_valid_url_error hash' do
       expect(Lopic.send(:not_valid_url_error)).to eq({
-        success: false,
-        error: 'url is not valid'
-      })
+                                                       success: false,
+                                                       error: 'url is not valid'
+                                                     })
     end
 
     it 'nokogiri_error hash' do
       expect(Lopic.send(:nokogiri_error)).to eq({
-        success: false,
-        error: 'error with parsing a document'
-      })
+                                                  success: false,
+                                                  error: 'error with parsing a document'
+                                                })
     end
 
     it 'success_hash hash' do
       expect(Lopic.send(:success_hash)).to eq({
-        succes: 'true',
-        error: ''
-      })
+                                                success: 'true',
+                                                error: ''
+                                              })
     end
   end
 end
+
