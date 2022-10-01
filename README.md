@@ -1,6 +1,6 @@
 # Lopic
 
-[![Build Status](https://travis-ci.org/Hunk13/lopic.svg?branch=master)](https://travis-ci.org/Hunk13/lopic)
+[![Ruby](https://github.com/Hunk13/lopic/actions/workflows/ruby.yml/badge.svg?branch=master)](https://github.com/Hunk13/lopic/actions/workflows/ruby.yml)
 
 List Of PICtures on website
 
