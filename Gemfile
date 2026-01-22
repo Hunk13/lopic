@@ -1,5 +1,5 @@
 source 'http://rubygems.org'
-ruby '2.7.5'
+ruby '3.3.8'
 
 group :test do
   gem 'pry'
